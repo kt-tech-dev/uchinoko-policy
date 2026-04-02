@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー | うちの子けんこう手帳</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+      background: #FAFAF7;
+      color: #2D2D2D;
+      padding: 24px 16px 60px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    header { text-align: center; padding: 32px 0 24px; }
+    header .icon { font-size: 40px; margin-bottom: 8px; }
+    header h1 { font-size: 22px; font-weight: bold; color: #2D2D2D; }
+    header p { font-size: 13px; color: #999; margin-top: 4px; }
+    .app-name { font-size: 13px; color: #FF8C42; font-weight: 600; margin-bottom: 4px; }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    h2 { font-size: 15px; font-weight: bold; color: #2D2D2D; margin-bottom: 8px; }
+    p, li { font-size: 14px; color: #555; line-height: 1.8; }
+    ul { padding-left: 16px; }
+    li { margin-bottom: 4px; }
+    .label { font-weight: 600; color: #2D2D2D; }
+    .data-item { margin-bottom: 10px; }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 32px;
+    }
+    footer a { color: #FF8C42; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="icon">🐾</div>
+    <div class="app-name">うちの子けんこう手帳</div>
+    <h1>プライバシーポリシー</h1>
+    <p>最終更新日: 2026年3月24日</p>
+  </header>
+
+  <div class="card">
+    <h2>1. 収集する情報</h2>
+    <p style="margin-bottom: 12px;">本アプリでは、サービス提供のために以下の情報を収集します。</p>
+    <div class="data-item">
+      <p><span class="label">アカウント情報:</span> メールアドレス（ログイン認証に使用）</p>
+    </div>
+    <div class="data-item">
+      <p><span class="label">ペット情報:</span> ペットの名前、種類、品種、誕生日、体重などの基本情報</p>
+    </div>
+    <div class="data-item">
+      <p><span class="label">記録データ:</span> 食事・散歩・トイレ・体調などの日々の記録、体重ログ、ワクチン・投薬・受診記録、日記、写真</p>
+    </div>
+    <div class="data-item">
+      <p><span class="label">支出データ:</span> ペット関連の支出記録</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. 情報の利用目的</h2>
+    <p style="margin-bottom: 8px;">収集した情報は以下の目的にのみ使用します。</p>
+    <ul>
+      <li>アプリの機能提供およびサービスの維持・改善</li>
+      <li>ユーザー認証およびアカウント管理</li>
+      <li>家族共有機能によるデータの共有</li>
+      <li>通知リマインダーの送信</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. データの保存</h2>
+    <p>ユーザーデータは Supabase（AWS インフラストラクチャ上）に暗号化して保存されます。写真データは Supabase Storage に保存されます。通知設定は端末のローカルストレージに保存されます。</p>
+  </div>
+
+  <div class="card">
+    <h2>4. 第三者への提供</h2>
+    <p>ユーザーの個人情報を第三者に販売・貸与することはありません。</p>
+    <p style="margin-top: 8px;">ただし、明細書読み取り機能をご利用の場合、アップロードされた画像は Google Gemini API に送信され、テキスト抽出処理が行われます。画像は処理後に保存されません。</p>
+    <p style="margin-top: 8px;">AI健康相談機能をご利用の場合、入力されたメッセージおよびペットの健康データは Google Gemini API に送信されます。</p>
+  </div>
+
+  <div class="card">
+    <h2>5. データの削除</h2>
+    <p>アカウントを削除すると、関連するすべてのデータ（ペット情報、記録、写真等）が完全に削除されます。データ削除のご要望はアプリ内の設定またはお問い合わせ先までご連絡ください。</p>
+  </div>
+
+  <div class="card">
+    <h2>6. お問い合わせ</h2>
+    <p>プライバシーに関するご質問やご要望は、下記までお問い合わせください。<br />メール: uchinokolog@gmail.com</p>
+  </div>
+
+  <footer>
+    <p><a href="https://kt-tech-dev.github.io/uchinoko-policy/terms/">利用規約</a></p>
+    <p style="margin-top: 8px;">© 2026 kt-tech-dev</p>
+  </footer>
+</body>
+</html>
