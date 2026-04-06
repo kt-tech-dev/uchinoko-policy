@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>うちの子けんこう手帳 - 家族共有招待</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FFF8F2;
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px 32px;
+      max-width: 360px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+    .icon { font-size: 48px; margin-bottom: 16px; }
+    .title { font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .desc { font-size: 14px; color: #666; line-height: 1.7; margin-bottom: 32px; }
+    .btn {
+      display: block;
+      background-color: #FF8C42;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 16px 24px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+    .sub { font-size: 12px; color: #999; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🐾</div>
+    <div class="title">家族共有への招待</div>
+    <div class="desc">
+      うちの子けんこう手帳で<br>
+      ペットの情報を一緒に管理しましょう。
+    </div>
+    <a class="btn" id="openApp" href="#">アプリで開く</a>
+    <a class="btn" style="background-color:#555;" href="https://apps.apple.com/jp/app/id6744835124">App Storeでダウンロード</a>
+    <div class="sub">アプリをお持ちでない方はApp Storeからダウンロードしてください</div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token');
+
+    if (token) {
+      const deepLink = 'com.uchinokokenko.app://invite/' + token;
+      document.getElementById('openApp').href = deepLink;
+
+      // 自動でアプリを開く試み
+      setTimeout(() => {
+        window.location.href = deepLink;
+      }, 500);
+    }
+  </script>
+</body>
+</html>
